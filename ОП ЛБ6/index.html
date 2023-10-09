@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LB</title>
+</head>
+<body>
+    <div class="container">
+        <div class="date">
+            <div>
+                <div>Межі інтегрування:</div>
+                <div> верхня межа <input type="number" id="limit1"> нижня межа <input type="number" id="limit2"></div>
+            </div>
+            <div>
+                <div>Розбиття відрізку:</div>
+                <div><input type="number" id="n"></div>
+            </div>
+            <div>
+                <div>Цифр після крапки:</div>
+                <div><input type="number" id="acc"></div>
+            </div>
+            <button class="button" onclick="int()">Розрахувати</button>
+            <div id="result"></div>
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  
+    <script src="app.js"></script>
+</body>
+</html>
